@@ -1,0 +1,26 @@
+.formPanel{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 25px;
+}
+.gridPanel{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px 25px;
+}
+.headerText {
+    text-align: center;
+    margin-bottom: 20px;
+}
+th {
+    text-align: center;
+    color: white;
+    height: 45px;
+    font-weight: 400;
+}
+thead{
+    background-color: #1865e0;
+    border-radius: 5px;
+}
