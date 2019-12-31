@@ -11,18 +11,30 @@ import { UserService } from './user.service';
 })
 export class UserComponent implements OnInit {
 
-  users: User[];
+  public users: User[] = [{
+    id: '0',
+    firstName: 'Test_FirstName',
+    lastName: 'Test_LastName',
+    email: 'test@gamil.com'
+  }];
 
   constructor(private router: Router, private userService: UserService) {
 
   }
 
   ngOnInit() {
-    this.userService.getUsers()
-      .subscribe( data => {
-        this.users = data;
-      });
+     this.getUserGridData();
   };
+
+  /**Method to get users list */
+  getUserGridData() {
+    this.userService.getUsers()
+    .subscribe( data => {
+      if (data.length) {
+        this.users = data;
+      }
+    });
+  }
 
   deleteUser(user: User): void {
     this.userService.deleteUser(user)

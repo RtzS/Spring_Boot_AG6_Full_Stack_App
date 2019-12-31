@@ -20,7 +20,20 @@ th {
     height: 45px;
     font-weight: 400;
 }
+td {
+    text-align: center;
+    vertical-align: middle !important;
+}
 thead{
     background-color: #1865e0;
     border-radius: 5px;
 }
+.blue-btn {
+    background-color: #1865e0 !important;
+    border-color: #1865e0 !important;
+   
+}
+.blue-btn:hover{
+    background-color: #1865e0 !important;
+    border-color: #1865e0 !important;
+} 
